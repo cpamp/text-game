@@ -1,7 +1,7 @@
 export class Command {
-    private key: string;
+    private name: string;
 
-    constructor (key: string) {
-        this.key = key;
+    constructor (name: string) {
+        this.name = name;
     }
 }
