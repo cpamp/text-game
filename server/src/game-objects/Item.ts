@@ -1,7 +1,7 @@
-export class Item {
-    public name: string;
+import {Noun} from './Noun';
 
+export class Item extends Noun {
     constructor(name: string) {
-        this.name = name;
+        super(name);
     }
 }
