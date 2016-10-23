@@ -3,13 +3,11 @@ import {Noun} from './Noun';
 import {Item} from './Item';
 
 export class Action {
-    public command: Command;
+    public commands: Command;
     public noun: Noun;
-    public item: Item;
 
-    constructor (command: Command, noun?: Noun, item?: Item) {
-        this.command = command;
+    constructor (commands: Command, noun: Noun | Item) {
+        this.commands = commands;
         this.noun = noun;
-        this.item = item;
     }
 }
